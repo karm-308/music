@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <!--<meta charset="UTF-8">-->
+    <title></title>
+    <!--先导入别人的，在导入自己-->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+
+
+    <script type="application/javascript" src="js/jquery-1.12.4.js"></script>
+    <script charset="UTF-8" src="js/player.js"></script>
+    <script charset="UTF-8" src="js/progress.js"></script>
+    <script charset="UTF-8" src="js/lyric.js"></script>
+    <script charset="UTF-8" src="js/index.js"></script>
+
+
+</head>
+<body>
+<div class="header">
+    <!-- 左边QQ音乐-->
+    <h1 class="logo"><a href=""></a></h1>
+    <ul class="register">
+        <li>登录</li>
+        <li>设置</li>
+    </ul>
+</div>
+<div class="content">
+    <!-- content_in 分为左右俩边-->
+    <div class="content_in">
+        <!-- qq音乐左边-->
+        <div class="left">
+            <!-- 左边分为上下俩部分-->
+            <div class="content_toolbar">
+                <span><i></i>收藏</span>
+                <span><i></i>添加到</span>
+                <span><i></i>下载</span>
+                <span><i></i>删除</span>
+                <span><i></i>清空列表</span>
+            </div>
+            <div class="content_list" data-mcs-them="minimal-dark">
+                <ul>
+                    <li class="list_title">
+                        <div class="list_check"><i></i></div>
+                        <div class="list_number"></div>
+                        <div class="list_name">歌曲</div>
+                        <div class="list_singer">歌手</div>
+                        <div class="list_time">时长</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- qq音乐右边-->
+        <div class="right">
+            <!-- 上面的图片专辑-->
+            <div class="song_info">
+                <a href="javascript:;" class="song_info_pic">
+                    <img src="images/lnj.jpg" alt=""/>
+                </a>
+
+                <div class="song_info_name">歌曲名称:
+                    <a href="javascript:;">嚣张</a>
+                </div>
+                <div class="song_info_singer">歌手名:
+                    <a href="javascript:;">en</a>
+                </div>
+                <div class="song_info_ablum">专辑名:
+                    <a href="javascript:;">系列</a>
+                </div>
+            </div>
+            <!-- 下面的歌曲播放,歌词容器-->
+            <div class="song_lyric_container">
+                <ul class="song_lyric"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <!-- 底部标签-->
+    <div class="footer_in">
+        <a href="javascript:;" class="music_pre"></a>
+        <a href="javascript:;" class="music_play"></a>
+        <a href="javascript:;" class="music_next"></a>
+        <!-- 设置播放进度条-->
+        <div class="music_progress_info">
+            <div class="music_progress_top">
+                <span class="music_progress_name">嚣张/en</span>
+                <span class="music_progress_time">00:00 / 05:23</span>
+            </div>
+            <!-- 进度条，三条连一-->
+            <div class="music_progress_bar">
+                <div class="music_progress_line">
+                    <div class="music_progress_dot"></div>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:;" class="music_mode music_mode2 music_mode3 music_mode4"></a>
+        <a href="javascript:;" class="music_fav music_fav2"></a>
+        <a href="javascript:;" class="music_down"></a>
+        <a href="javascript:;" class="music_comment"></a>
+        <a href="javascript:;" class="music_only music_only2"></a>
+        <!-- 音量-->
+        <div class="music_voice_info">
+            <a href="javascript:;" class="music_voice_icon"></a>
+
+            <div class="music_voice_bar">
+                <div class="music_voice_line">
+                    <div class="music_voice_dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--背景颜色-->
+<div class="mask_bg"></div>
+<!--字体调清晰-->
+<div class="mask"></div>
+<!--播放标签-->
+<audio src=""></audio>
+</body>
+</html>
